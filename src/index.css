@@ -1,13 +1,79 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+
+.App {
+    width: 76%;
+    margin-inline: auto;
+    max-width: 1920px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+    margin-top: 2rem;
+}
+
+.filter {
+    width: 180px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem 4rem;
+}
+
+.filter__container {
+    margin-top: 0.5rem;
+}
+
+.dates {
+   /*  margin-top: 3rem; */
+    /* width: 200px; */
+}
+
+.fetchButton {
+    margin-top: 0.6rem;
+}
+
+.chart {
+    width: 500px;
+    margin-top: 3rem;
+    margin-left: 10rem;
+}
+
+
+/* MEDIA QUERIES (tablets) */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+
+    .filter {
+        width: 80px;
+        display: grid;
+        grid-template-columns: 1fr;
+        /* gap: 2rem 4rem; */
+    }
+
+    .filter__container {
+        width: 150px;
+    }
+
+    .chart {
+        margin-left: 1rem;
+        width: 500px;
+    }
+}
+
+
+/* MEDIA QUERIES (phones) */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    .filter__container {
+        width: 150px;
+    }
+
+    .chart {
+        margin-top: 1rem;
+        margin-left: 1rem;
+        width: 400px;
+    }
 }
